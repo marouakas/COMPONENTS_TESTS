@@ -1,0 +1,30 @@
+<script>
+class Product { 
+    constructor(data)  {
+    this.id = data.id;
+    this.name = data.name;
+    this.price = data.price;
+    }
+}
+
+
+class Catalog {
+    constructor () {
+        this.products = [
+         new Product ({ id: 1, name: "Produit 1", price: 10}),
+         new Product ({ id: 2, name: "Produit 2", price: 10}),
+         new Product ({ id: 3, name: "Produit 3", price: 10}),
+    ];
+    }
+
+render () {
+     return "coucou";
+} 
+}
+
+
+
+const catalog = new Catalog();
+console.log(catalog.render());
+
+</script>
